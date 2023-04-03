@@ -15,7 +15,7 @@
     """,
 
     'author': "Avalantec",
-    'website': "http://www.avalantec.com",
+    'website': "https://www.avalantec.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
