@@ -1,0 +1,36 @@
+<odoo>
+  <record id="Importar_invoice_supplier" model="ir.ui.view">
+    <field name="name">Importar.move.supplier.form</field>
+    <field name="model">account.move</field>
+    <field name="inherit_id" ref="account.view_move_form"/>
+    <field name="arch" type="xml">
+           <field name="ref" position="after">
+             <field name="clave_proveedor"/>
+             <field name="numero_consecutivo_aceptacion"/>
+           </field>
+    </field>
+  </record>
+  
+  <record id="Importar_invoice" model="ir.ui.view">
+    <field name="name">Importar.move.form</field>
+    <field name="model">account.move</field>
+    <field name="inherit_id" ref="account.view_move_form"/>
+    <field name="arch" type="xml">
+           <field name="invoice_payment_term_id" position="after">
+             <field name="clave_proveedor"/>
+           </field>
+    </field>
+  </record>
+
+  <record id="Importar_res_partner" model="ir.ui.view">
+    <field name="name">Importar.res.partner</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+           <field name="vat" position="after">
+             <field name="tipo_cedula"/>
+           </field>
+    </field>
+  </record>
+  
+</odoo>
